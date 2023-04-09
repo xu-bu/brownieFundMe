@@ -25,7 +25,7 @@ run `brownie.exe run .\scripts\deploy.py` to deploy on default network (see netw
 
 run
 
-`brownie.exe networks add development mainnet-fork-dev cmd=ganache-cli host='$ALCHEMY_API_KEY' accounts=10 mnemonic=brownie port=8545` 
+`brownie.exe networks add development mainnet-fork-dev cmd=ganache-cli host=http://127.0.0.1 fork='$ALCHEMY_API_KEY' accounts=10 mnemonic=brownie port=8545` 
 
 to add fork-mainnet, accounts=10 means brownie will create 10 fake accounts on our fork-mainnet for us
 
@@ -37,7 +37,7 @@ to add ganache-local network, if you deploy contracts on ganache-local network, 
 
 2. run
 
-`brownie.exe run .\scripts\deploy.py --network mainnet-fork-dev`
+`brownie.exe run .\scripts\deploy.py --network $networkName`
 
  to deploy on specific network
 
