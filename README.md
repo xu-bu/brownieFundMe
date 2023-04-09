@@ -11,7 +11,7 @@ export ETHERSCAN_TOKEN=(variable name must be this, get it from ethescan-API key
 
 # deploy:
 
-## test locally:
+### test locally:
 
 run `brownie compile` to compile
 
@@ -19,7 +19,7 @@ run `brownie.exe run .\scripts\deploy.py` to deploy on default network (see netw
 
 
 
-## test on testnet:
+### test on testnet:
 
 1. add network
 
