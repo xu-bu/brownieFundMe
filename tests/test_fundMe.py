@@ -8,7 +8,7 @@ def test_fundAndWithdraw():
     fundMe=deployFundMe()
     entranceFee=fundMe.getEntranceFee()+100
     txn=fundMe.fund({"from":account,"value":entranceFee})
-    # for payable function, we need to wait
+    # when invoking function of contract to make transaction, we need to wait
     txn.wait(1)
     assert fundMe.addressToAmountFunded(account.address)==entranceFee
     txn=fundMe.withdraw({"from":account})
