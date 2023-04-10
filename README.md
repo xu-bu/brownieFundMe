@@ -1,4 +1,5 @@
-# create .env:
+# Configuration:
+1. create .env:
 example:
 
 ```
@@ -8,6 +9,7 @@ export PRIVATE_KEY=(get it from metamask's account)
 
 export ETHERSCAN_TOKEN=(variable name must be this, get it from ethescan-API keys, used for verification and deploying)
 ```
+2. make sure you have enough Sepolia test ETH on your account (faucet link:`https://www.infura.io/faucet`)
 
 # deploy:
 
